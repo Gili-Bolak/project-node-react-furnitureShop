@@ -4,6 +4,7 @@ const userController = require("../controllers/userController")
 const verifyJWT = require("../middleware/verifyJWT")
 const managerJWT = require("../middleware/managerJWT")
 
+
 router.get("/", managerJWT, userController.getAllUsers)
 router.post("/", userController.createNewUser)
 router.put("/:_id", verifyJWT, userController.updateUser)
