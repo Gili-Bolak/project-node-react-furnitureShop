@@ -110,7 +110,6 @@ const Payment = ({details, shipping }) => {
                 <form onSubmit={formik.handleSubmit} className="flex flex-column gap-2">
                     <label htmlFor="name">שם בעל הכרטיס *</label>
                     <InputText
-                        keyfilter="int"
                         id="name"
                         name="name"
                         value={formik.values.name}
