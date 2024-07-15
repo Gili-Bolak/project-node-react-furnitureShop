@@ -49,8 +49,8 @@ const Customers = () => {
     };
 
     const mailBodyTemplate = (rowData) => {
-        if(rowData.mail){
-            return <span>₪{rowData.mail}</span>;
+        if(rowData.email){
+            return <span>₪{rowData.email}</span>;
         }
         else{
             return <span>לא קיים</span>;
