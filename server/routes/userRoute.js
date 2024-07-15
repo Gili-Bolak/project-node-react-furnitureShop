@@ -6,7 +6,7 @@ const managerJWT = require("../middleware/managerJWT")
 
 
 router.get("/", managerJWT, userController.getAllUsers)
-router.post("/", userController.createNewUser)
+router.post("/", managerJWT, userController.createNewUser)
 router.put("/:_id", verifyJWT, userController.updateUser)
 router.delete("/:_id", managerJWT, userController.deleteUser)
 
